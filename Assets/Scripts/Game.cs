@@ -21,9 +21,6 @@ public class Game : MonoBehaviour
 	[SerializeField, Min(1f)]
 	float newGameDelay = 3f;
 
-	[SerializeField]
-	LivelyCamera livelyCamera;
-
 	float countdownUntilNewGame;
 
 	void Awake () => countdownUntilNewGame = newGameDelay;
@@ -81,12 +78,10 @@ public class Game : MonoBehaviour
 		float xExtents = arenaExtents.x - ball.Extents;
 		if (x < -xExtents)
 		{
-			livelyCamera.PushXZ(ball.Velocity);
 			ball.BounceX(-xExtents);
 		}
 		else if (x > xExtents)
 		{
-			livelyCamera.PushXZ(ball.Velocity);
 			ball.BounceX(xExtents);
 		}
 	}
@@ -111,7 +106,6 @@ public class Game : MonoBehaviour
 
 		BounceXIfNeeded(bounceX);
 		bounceX = ball.Position.x - ball.Velocity.x * durationAfterBounce;
-		livelyCamera.PushXZ(ball.Velocity);
 		ball.BounceY(boundary);
 
 		if (defender.HitBall(bounceX, ball.Extents, out float hitFactor))
@@ -120,7 +114,6 @@ public class Game : MonoBehaviour
 		}
 		else
 		{
-			livelyCamera.JostleY();
 			if (attacker.ScorePoint(pointsToWin))
 			{
 				EndGame();
