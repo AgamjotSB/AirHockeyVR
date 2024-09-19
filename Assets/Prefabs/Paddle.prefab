@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2643435843116784051}
   - component: {fileID: 6548281404849010042}
   - component: {fileID: -8531734499239033554}
+  - component: {fileID: -4187548378187590901}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8287629814583422231}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2643435843116784051
 MeshFilter:
@@ -97,8 +98,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  goalRenderer: {fileID: 0}
+  goalColor: {r: 1, g: 1, b: 1, a: 1}
   minExtents: 4
   maxExtents: 4
   speed: 10
   maxTargetingBias: 0.75
   isAI: 0
+--- !u!64 &-4187548378187590901
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8287629814583422231}
+  m_Material: {fileID: 13400000, guid: db49967c1cd3cd84393b372bb73d9f2e, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
