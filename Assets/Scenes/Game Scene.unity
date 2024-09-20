@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8181a9db3c4badc48a8f5942cd917032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 35
   maxTargetingBias: 0.75
   target: {fileID: 395051105153716710}
 --- !u!1 &1221319025
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.2
   sharedProfile: {fileID: 11400000, guid: 99039df608295401e8ff39431c7fe571, type: 2}
 --- !u!4 &1221319027
 Transform:
@@ -798,13 +798,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3993547026667961773, guid: 49c25bbfe2a498b4d96fcbeb2cc460a9, type: 3}
-      propertyPath: isAI
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5616356082686072212, guid: 49c25bbfe2a498b4d96fcbeb2cc460a9, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315646079624113358, guid: 49c25bbfe2a498b4d96fcbeb2cc460a9, type: 3}
+      propertyPath: constantYSpeed
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

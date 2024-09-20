@@ -100,11 +100,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   goalRenderer: {fileID: 0}
   goalColor: {r: 1, g: 1, b: 1, a: 1}
-  minExtents: 4
-  maxExtents: 4
-  speed: 10
-  maxTargetingBias: 0.75
-  isAI: 0
+  minExtents: 2
+  maxExtents: 2
 --- !u!64 &-4187548378187590901
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adaa5e5800f204cd8a1ceb2851a104b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxXSpeed: 20
-  maxStartXSpeed: 2
-  constantYSpeed: 10
+  maxXSpeed: 40
+  maxStartXSpeed: 20
+  constantYSpeed: 20
   extents: 0.5
   bounceParticleSystem: {fileID: 3168788091346191621}
   startParticleSystem: {fileID: 6144350672960343542}

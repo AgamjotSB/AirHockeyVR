@@ -10,7 +10,7 @@ public class PaddleAI : MonoBehaviour
 
 	[SerializeField] Transform target;
 
-	float arenaExtents = 10f, extents = 4f, targetingBias;
+	float arenaExtents = 10f, extents = 2f, targetingBias;
 
     private void Awake() {
         ChangeTargetingBias();

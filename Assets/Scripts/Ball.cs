@@ -35,9 +35,9 @@ public class Ball : MonoBehaviour
 		velocity.x = Random.Range(-maxStartXSpeed, maxStartXSpeed);
 		velocity.y = -constantYSpeed;
 		gameObject.SetActive(true);
-		startParticleSystem.Emit(startParticleEmission);
-		SetTrailEmission(true);
-		trailParticleSystem.Play();
+		//startParticleSystem.Emit(startParticleEmission);
+		//SetTrailEmission(true);
+		//trailParticleSystem.Play();
 	}
 
 	public void EndGame ()
@@ -87,7 +87,7 @@ public class Ball : MonoBehaviour
 		ParticleSystem.ShapeModule shape = bounceParticleSystem.shape;
 		shape.position = new Vector3(x, 0f, z);
 		shape.rotation = new Vector3(0f, rotation, 0f);
-		bounceParticleSystem.Emit(bounceParticleEmission);
+		//bounceParticleSystem.Emit(bounceParticleEmission);
 	}
 
 	void SetTrailEmission (bool enabled)

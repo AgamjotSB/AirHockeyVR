@@ -6,7 +6,7 @@ public class PaddleVR : MonoBehaviour
 
 	[SerializeField] Transform target;
 
-	float arenaExtents = 10f, extents = 4f;
+	float arenaExtents = 10f, extents = 2f;
 
     private void Awake() {
     }
